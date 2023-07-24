@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form style</title>
+</head>
+<body style="background-color: lightblue;">
+    <style>
+        #form-register{
+            width: 300px;
+            background-color: white;
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .input-style{
+            margin: 0%;
+            margin-top: 2px;
+            margin-bottom: 4px;
+        }
+        .input{
+            width: 200px;
+            margin-top: 10px;
+            margin-bottom: 12px;
+        }
+        .submit{
+            margin-top: 12px;
+            margin-bottom: 12px;
+        }
+    </style>
+    <h1 style="text-align: center;">Signup</h1>
+    <form  method="get" id="form-register">
+        <div>
+        
+            <input  class="input"  type="text" name="Full-Name" placeholder="Full Name" autofocus required>
+        </div>
+        <div>
+          
+            <input class="input" type="text" name="Email" placeholder="Email" autofocus>
+        </div>
+        <div>
+          
+            <input class="input" type="number" name="Age" placeholder="age" autofocus min="18" max="40">
+        </div>
+        <div>
+       
+            <input class="input" type="password" name="Password" placeholder="Password" autofocus required
+            maxlength="8">
+        </div>
+        <div>
+           
+            <input class="input" type="password" name="Confirm Password" placeholder="Confirm Password" autofocus maxlength="8">
+        </div>
+        <div>
+            Gender:<br>
+            <input type="radio" name="male" value="male">
+            male</input>
+            
+            <input type="radio" name="female" value="female">
+            female</input>
+            
+            <input type="radio" name="others" value="others">
+            others</input>
+        </div>
+        <div>
+            security questions:<br>
+            <select  class="input" name="security questions">
+                <option  value="fav-color">what is your fav-color</option>
+                <option  value="firsr-pet-name">what is your firsr-pet-name</option>
+            </select>
+        </div>
+        <div>
+            <textarea class="input" name="answer" rows="6" cols="20"></textarea>
+        </div>
+        <div>
+            <input type="checkbox"  name="terms and conditons " value="accept">i agree these conditons  
+        </div>
+        <div>
+            <input  class="submit" type="submit" value="register">
+        </div>
+        <input  list="tech" name="technology"/>
+        <datalist  id="tech">
+            <option value="java"></option>
+            <option value="python"></option>
+            <option value="html"></option>
+        </datalist>
+    </form>
+    
+</body>
+</html>
